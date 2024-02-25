@@ -1,4 +1,4 @@
-# stank_rsv_active
-SPIソフトウェア受信PIC → PWM 4ch
+# coil6x6_rsv_coilsub
+コイルガン機動戦闘車 射撃制御サブ
 
-https://darkside.higashino.jp/category/stank16.html
+https://darkside.higashino.jp/category/coil6x6.html
