@@ -1,0 +1,611 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1575 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"50 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\lcd_i2c.c
+[v _LCD_i2C_cmd LCD_i2C_cmd `(v  1 e 1 0 ]
+"29 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\main.c
+[v _check_rsv check_rsv `(uc  1 e 1 0 ]
+"42
+[v _set_pwm set_pwm `(v  1 e 1 0 ]
+"52
+[v _main main `(v  1 e 1 0 ]
+"75 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"174
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"193
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"213
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+"217
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+"52 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"75
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"57 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"58 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+"113
+[v _PWM1_Start PWM1_Start `(v  1 e 1 0 ]
+"128
+[v _PWM1_LoadBufferSet PWM1_LoadBufferSet `(v  1 e 1 0 ]
+"139
+[v _PWM1_DutyCycleSet PWM1_DutyCycleSet `(v  1 e 1 0 ]
+"58 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+"113
+[v _PWM2_Start PWM2_Start `(v  1 e 1 0 ]
+"128
+[v _PWM2_LoadBufferSet PWM2_LoadBufferSet `(v  1 e 1 0 ]
+"139
+[v _PWM2_DutyCycleSet PWM2_DutyCycleSet `(v  1 e 1 0 ]
+"7 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\soft_i2c.c
+[v _I2C_start I2C_start `(v  1 e 1 0 ]
+"19
+[v _I2C_stop I2C_stop `(v  1 e 1 0 ]
+"29
+[v _I2C_send I2C_send `(v  1 e 1 0 ]
+"73
+[v _I2C_ackchk I2C_ackchk `(uc  1 e 1 0 ]
+"29 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\wt901.c
+[v _set_rsv_buf set_rsv_buf `(v  1 e 1 0 ]
+"42
+[v _get_rsv_size1 get_rsv_size1 `(uc  1 e 1 0 ]
+"45
+[v _get_rsv_size2 get_rsv_size2 `(uc  1 e 1 0 ]
+"52
+[v _clear_rsv_size clear_rsv_size `(v  1 e 1 0 ]
+"61
+[v _WT901_rsv_int WT901_rsv_int `(v  1 e 1 0 ]
+"85 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X/mcc_generated_files/eusart.h
+[v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"86
+[v _EUSART_RxDefaultInterruptHandler EUSART_RxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+[s S575 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 C:\Program Files\Microchip\xc8\v2.41\pic\include\proc\pic16f1575.h
+[s S584 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S589 . 1 `S575 1 . 1 0 `S584 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES589  1 e 1 @11 ]
+[s S721 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"444
+[u S728 . 1 `S721 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES728  1 e 1 @12 ]
+[s S890 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+]
+"494
+[u S897 . 1 `S890 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES897  1 e 1 @14 ]
+[s S618 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"545
+[u S626 . 1 `S618 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES626  1 e 1 @17 ]
+"973
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1023
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S871 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+]
+"1038
+[u S878 . 1 `S871 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES878  1 e 1 @142 ]
+[s S434 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1089
+[u S442 . 1 `S434 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES442  1 e 1 @145 ]
+[s S382 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1213
+[s S391 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S396 . 1 `S382 1 . 1 0 `S391 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES396  1 e 1 @149 ]
+"1330
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1389
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1447
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1825
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S738 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"1840
+[u S745 . 1 `S738 1 . 1 0 ]
+[v _LATAbits LATAbits `VES745  1 e 1 @268 ]
+"1870
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S755 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"1885
+[u S762 . 1 `S755 1 . 1 0 ]
+[v _LATCbits LATCbits `VES762  1 e 1 @270 ]
+"2204
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2420
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2467
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2704
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"2724
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"2751
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"2771
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"2791
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S500 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"2808
+[u S509 . 1 `S500 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES509  1 e 1 @413 ]
+"2853
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S478 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2870
+[u S487 . 1 `S478 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES487  1 e 1 @414 ]
+"2915
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"2967
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3025
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"3083
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"3136
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"3194
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @780 ]
+"3247
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @782 ]
+"4248
+[v _PWM1PHL PWM1PHL `VEuc  1 e 1 @3473 ]
+"4326
+[v _PWM1PHH PWM1PHH `VEuc  1 e 1 @3474 ]
+"4411
+[v _PWM1DCL PWM1DCL `VEuc  1 e 1 @3475 ]
+"4489
+[v _PWM1DCH PWM1DCH `VEuc  1 e 1 @3476 ]
+"4574
+[v _PWM1PRL PWM1PRL `VEuc  1 e 1 @3477 ]
+"4652
+[v _PWM1PRH PWM1PRH `VEuc  1 e 1 @3478 ]
+"4737
+[v _PWM1OFL PWM1OFL `VEuc  1 e 1 @3479 ]
+"4815
+[v _PWM1OFH PWM1OFH `VEuc  1 e 1 @3480 ]
+"4900
+[v _PWM1TMRL PWM1TMRL `VEuc  1 e 1 @3481 ]
+"4978
+[v _PWM1TMRH PWM1TMRH `VEuc  1 e 1 @3482 ]
+"5056
+[v _PWM1CON PWM1CON `VEuc  1 e 1 @3483 ]
+[s S38 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 MODE 1 0 :2:2 
+`uc 1 POL 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 OE 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"5089
+[s S45 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PWM1MODE0 1 0 :1:2 
+`uc 1 PWM1MODE1 1 0 :1:3 
+]
+[s S49 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PWM1MODE 1 0 :2:2 
+`uc 1 PWM1POL 1 0 :1:4 
+`uc 1 PWM1OUT 1 0 :1:5 
+`uc 1 PWM1OE 1 0 :1:6 
+`uc 1 PWM1EN 1 0 :1:7 
+]
+[s S56 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 MODE0 1 0 :1:2 
+`uc 1 MODE1 1 0 :1:3 
+]
+[u S60 . 1 `S38 1 . 1 0 `S45 1 . 1 0 `S49 1 . 1 0 `S56 1 . 1 0 ]
+[v _PWM1CONbits PWM1CONbits `VES60  1 e 1 @3483 ]
+"5164
+[v _PWM1INTE PWM1INTE `VEuc  1 e 1 @3484 ]
+"5290
+[v _PWM1INTF PWM1INTF `VEuc  1 e 1 @3485 ]
+[s S126 . 1 `uc 1 PRIF 1 0 :1:0 
+`uc 1 DCIF 1 0 :1:1 
+`uc 1 PHIF 1 0 :1:2 
+`uc 1 OFIF 1 0 :1:3 
+]
+"5314
+[s S131 . 1 `uc 1 PWM1PRIF 1 0 :1:0 
+`uc 1 PWM1DCIF 1 0 :1:1 
+`uc 1 PWM1PHIF 1 0 :1:2 
+`uc 1 PWM1OFIF 1 0 :1:3 
+]
+[u S136 . 1 `S126 1 . 1 0 `S131 1 . 1 0 ]
+[v _PWM1INTFbits PWM1INTFbits `VES136  1 e 1 @3485 ]
+"5416
+[v _PWM1CLKCON PWM1CLKCON `VEuc  1 e 1 @3486 ]
+"5524
+[v _PWM1LDCON PWM1LDCON `VEuc  1 e 1 @3487 ]
+[s S88 . 1 `uc 1 LDS 1 0 :2:0 
+`uc 1 . 1 0 :4:2 
+`uc 1 LDT 1 0 :1:6 
+`uc 1 LDA 1 0 :1:7 
+]
+"5551
+[s S93 . 1 `uc 1 PWM1LDS0 1 0 :1:0 
+`uc 1 PWM1LDS1 1 0 :1:1 
+]
+[s S96 . 1 `uc 1 PWM1LDS 1 0 :2:0 
+`uc 1 . 1 0 :4:2 
+`uc 1 PWM1LDM 1 0 :1:6 
+`uc 1 PWM1LD 1 0 :1:7 
+]
+[s S101 . 1 `uc 1 LDS0 1 0 :1:0 
+`uc 1 LDS1 1 0 :1:1 
+]
+[u S104 . 1 `S88 1 . 1 0 `S93 1 . 1 0 `S96 1 . 1 0 `S101 1 . 1 0 ]
+[v _PWM1LDCONbits PWM1LDCONbits `VES104  1 e 1 @3487 ]
+"5606
+[v _PWM1OFCON PWM1OFCON `VEuc  1 e 1 @3488 ]
+"5721
+[v _PWM2PHL PWM2PHL `VEuc  1 e 1 @3489 ]
+"5799
+[v _PWM2PHH PWM2PHH `VEuc  1 e 1 @3490 ]
+"5884
+[v _PWM2DCL PWM2DCL `VEuc  1 e 1 @3491 ]
+"5962
+[v _PWM2DCH PWM2DCH `VEuc  1 e 1 @3492 ]
+"6047
+[v _PWM2PRL PWM2PRL `VEuc  1 e 1 @3493 ]
+"6125
+[v _PWM2PRH PWM2PRH `VEuc  1 e 1 @3494 ]
+"6210
+[v _PWM2OFL PWM2OFL `VEuc  1 e 1 @3495 ]
+"6288
+[v _PWM2OFH PWM2OFH `VEuc  1 e 1 @3496 ]
+"6373
+[v _PWM2TMRL PWM2TMRL `VEuc  1 e 1 @3497 ]
+"6451
+[v _PWM2TMRH PWM2TMRH `VEuc  1 e 1 @3498 ]
+"6529
+[v _PWM2CON PWM2CON `VEuc  1 e 1 @3499 ]
+"6562
+[s S205 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PWM2MODE0 1 0 :1:2 
+`uc 1 PWM2MODE1 1 0 :1:3 
+]
+[s S209 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PWM2MODE 1 0 :2:2 
+`uc 1 PWM2POL 1 0 :1:4 
+`uc 1 PWM2OUT 1 0 :1:5 
+`uc 1 PWM2OE 1 0 :1:6 
+`uc 1 PWM2EN 1 0 :1:7 
+]
+[u S220 . 1 `S38 1 . 1 0 `S205 1 . 1 0 `S209 1 . 1 0 `S56 1 . 1 0 ]
+[v _PWM2CONbits PWM2CONbits `VES220  1 e 1 @3499 ]
+"6637
+[v _PWM2INTE PWM2INTE `VEuc  1 e 1 @3500 ]
+"6763
+[v _PWM2INTF PWM2INTF `VEuc  1 e 1 @3501 ]
+"6787
+[s S291 . 1 `uc 1 PWM2PRIF 1 0 :1:0 
+`uc 1 PWM2DCIF 1 0 :1:1 
+`uc 1 PWM2PHIF 1 0 :1:2 
+`uc 1 PWM2OFIF 1 0 :1:3 
+]
+[u S296 . 1 `S126 1 . 1 0 `S291 1 . 1 0 ]
+[v _PWM2INTFbits PWM2INTFbits `VES296  1 e 1 @3501 ]
+"6889
+[v _PWM2CLKCON PWM2CLKCON `VEuc  1 e 1 @3502 ]
+"6997
+[v _PWM2LDCON PWM2LDCON `VEuc  1 e 1 @3503 ]
+"7024
+[s S253 . 1 `uc 1 PWM2LDS0 1 0 :1:0 
+`uc 1 PWM2LDS1 1 0 :1:1 
+]
+[s S256 . 1 `uc 1 PWM2LDS 1 0 :2:0 
+`uc 1 . 1 0 :4:2 
+`uc 1 PWM2LDM 1 0 :1:6 
+`uc 1 PWM2LD 1 0 :1:7 
+]
+[u S264 . 1 `S88 1 . 1 0 `S253 1 . 1 0 `S256 1 . 1 0 `S101 1 . 1 0 ]
+[v _PWM2LDCONbits PWM2LDCONbits `VES264  1 e 1 @3503 ]
+"7079
+[v _PWM2OFCON PWM2OFCON `VEuc  1 e 1 @3504 ]
+"10413
+[v _RXPPS RXPPS `VEuc  1 e 1 @3605 ]
+"10569
+[v _RA0PPS RA0PPS `VEuc  1 e 1 @3728 ]
+"10615
+[v _RA1PPS RA1PPS `VEuc  1 e 1 @3729 ]
+"10707
+[v _RA4PPS RA4PPS `VEuc  1 e 1 @3732 ]
+"12070
+[v _PLLR PLLR `VEb  1 e 0 @1238 ]
+"15 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\main.c
+[v _aa aa `[4]s  1 e 8 0 ]
+"17
+[v _av av `[4]s  1 e 8 0 ]
+"21
+[v _n_on n_on `uc  1 e 1 0 ]
+"22
+[v _n_off n_off `uc  1 e 1 0 ]
+"23
+[v _trigger trigger `uc  1 e 1 0 ]
+"62 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/eusart.c
+[v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
+"63
+[v _eusartTxTail eusartTxTail `VEuc  1 e 1 0 ]
+"64
+[v _eusartTxBuffer eusartTxBuffer `VE[8]uc  1 e 8 0 ]
+"65
+[v _eusartTxBufferRemaining eusartTxBufferRemaining `VEuc  1 e 1 0 ]
+"67
+[v _eusartRxHead eusartRxHead `VEuc  1 e 1 0 ]
+"68
+[v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
+"69
+[v _eusartRxBuffer eusartRxBuffer `VE[8]uc  1 e 8 0 ]
+"70
+[v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
+"7 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\wt901.c
+[v _temp_buf temp_buf `[16]uc  1 s 16 temp_buf ]
+"10
+[v _rsv_mode rsv_mode `uc  1 s 1 rsv_mode ]
+"15
+[v _rsv_n rsv_n `uc  1 s 1 rsv_n ]
+"16
+[v _rsv_size1 rsv_size1 `uc  1 s 1 rsv_size1 ]
+"17
+[v _rsv_size2 rsv_size2 `uc  1 s 1 rsv_size2 ]
+"18
+[v _rsv_cmd rsv_cmd `uc  1 s 1 rsv_cmd ]
+"19
+[v _rsv_csum rsv_csum `uc  1 s 1 rsv_csum ]
+"20
+[v _rsv_buf1 rsv_buf1 `*.4uc  1 s 1 rsv_buf1 ]
+"21
+[v _rsv_buf1_size rsv_buf1_size `uc  1 s 1 rsv_buf1_size ]
+"22
+[v _rsv_buf2 rsv_buf2 `*.4uc  1 s 1 rsv_buf2 ]
+"23
+[v _rsv_buf2_size rsv_buf2_size `uc  1 s 1 rsv_buf2_size ]
+"52 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"62
+[v main@t t `us  1 a 2 1 ]
+"113
+} 0
+"29 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\wt901.c
+[v _set_rsv_buf set_rsv_buf `(v  1 e 1 0 ]
+{
+[v set_rsv_buf@buf1 buf1 `*.4uc  1 a 1 wreg ]
+[v set_rsv_buf@buf1 buf1 `*.4uc  1 a 1 wreg ]
+[v set_rsv_buf@size1 size1 `uc  1 p 1 3 ]
+[v set_rsv_buf@buf2 buf2 `*.4uc  1 p 1 4 ]
+[v set_rsv_buf@size2 size2 `uc  1 p 1 5 ]
+[v set_rsv_buf@buf1 buf1 `*.4uc  1 a 1 6 ]
+"37
+} 0
+"42 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\main.c
+[v _set_pwm set_pwm `(v  1 e 1 0 ]
+{
+"49
+} 0
+"113 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/pwm2.c
+[v _PWM2_Start PWM2_Start `(v  1 e 1 0 ]
+{
+"116
+} 0
+"128
+[v _PWM2_LoadBufferSet PWM2_LoadBufferSet `(v  1 e 1 0 ]
+{
+"131
+} 0
+"139
+[v _PWM2_DutyCycleSet PWM2_DutyCycleSet `(v  1 e 1 0 ]
+{
+[v PWM2_DutyCycleSet@dutyCycleCount dutyCycleCount `us  1 p 2 3 ]
+"143
+} 0
+"113 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/pwm1.c
+[v _PWM1_Start PWM1_Start `(v  1 e 1 0 ]
+{
+"116
+} 0
+"128
+[v _PWM1_LoadBufferSet PWM1_LoadBufferSet `(v  1 e 1 0 ]
+{
+"131
+} 0
+"139
+[v _PWM1_DutyCycleSet PWM1_DutyCycleSet `(v  1 e 1 0 ]
+{
+[v PWM1_DutyCycleSet@dutyCycleCount dutyCycleCount `us  1 p 2 3 ]
+"143
+} 0
+"52 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\wt901.c
+[v _clear_rsv_size clear_rsv_size `(v  1 e 1 0 ]
+{
+"55
+} 0
+"29 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\main.c
+[v _check_rsv check_rsv `(uc  1 e 1 0 ]
+{
+"30
+[v check_rsv@n n `uc  1 a 1 3 ]
+"39
+} 0
+"45 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\wt901.c
+[v _get_rsv_size2 get_rsv_size2 `(uc  1 e 1 0 ]
+{
+"47
+} 0
+"42
+[v _get_rsv_size1 get_rsv_size1 `(uc  1 e 1 0 ]
+{
+"44
+} 0
+"50 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"75
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"79
+} 0
+"58 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+{
+"110
+} 0
+"58 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+{
+"110
+} 0
+"57 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"107
+} 0
+"61 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"75 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"111
+} 0
+"213
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetTxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 3 ]
+"215
+} 0
+"217
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 3 ]
+"219
+} 0
+"52 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"66
+} 0
+"193 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/eusart.c
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"211
+} 0
+"61 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\wt901.c
+[v _WT901_rsv_int WT901_rsv_int `(v  1 e 1 0 ]
+{
+"68
+[v WT901_rsv_int@c c `uc  1 a 1 2 ]
+"121
+} 0
+"174 Z:\coil6x6\coilgun\coil6x6_rsv_coilsub.X\mcc_generated_files/eusart.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"191
+} 0
